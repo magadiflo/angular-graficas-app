@@ -14,3 +14,16 @@ npm install --save chart.js@2.9.4
 
 ## Paleta de colores
 [Visitar color.adobe.com](https://color.adobe.com/es/create/color-wheel)
+
+# Proyecto en producción
+El proyecto fue subido a netlify:
+
+```
+https://app.netlify.com/teams/magadiflo/overview
+```
+
+Enlace del proyecto:
+
+```
+https://strong-monstera-496df3.netlify.app/graficas/barra
+```
