@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map, delay } from 'rxjs';
 
 interface RedesSociales {
   facebook: number;
@@ -23,4 +23,15 @@ export class GraficasService {
     return this.http.get<RedesSociales>(URL);
   }
 
+  getUsuariosRedesSocialesRefactorizado(): Observable<{ labels: string[], values: number[] }> {
+    return this.http.get<RedesSociales>(URL)
+      .pipe(
+        delay(1500),
+        map(redesSociales => {
+          const labels = Object.keys(redesSociales);
+          const values = Object.values(redesSociales);
+          return { labels, values };
+        })
+      );
+  }
 }
