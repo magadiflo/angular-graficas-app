@@ -11,3 +11,6 @@ npm install --save ng2-charts@2.4.2
 ```
 npm install --save chart.js@2.9.4
 ```
+
+## Paleta de colores
+[Visitar color.adobe.com](https://color.adobe.com/es/create/color-wheel)
